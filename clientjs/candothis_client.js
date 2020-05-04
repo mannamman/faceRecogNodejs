@@ -2,8 +2,8 @@ var net = require('net')
 const { PythonShell } = require('python-shell');
 
 var client = new net.Socket();
-
-client.connect(1337,'127.0.0.1',function(){
+const ip = '127.0.0.1';
+client.connect(1337,ip,function(){
   console.log('connected to server');
 });
 
